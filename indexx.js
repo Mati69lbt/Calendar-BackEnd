@@ -21,6 +21,9 @@ app.use(express.json());
 // });
 app.use("/api/auth", require("./routes/auth"));
 
+//rutas de los eventos
+app.use("/api/events", require("./routes/events"));
+
 //Directorio Publico
 app.use(express.static("public"));
 
